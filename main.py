@@ -19,7 +19,7 @@ def submit_data():
 		return jsonify({"message": c}), 200
 
 
-@app.route('/ap/recieve_data, methods=['POST'])
+@app.route('/ap/recieve_data, methods=["POST"])
 def recieve_data():
 	data = request.get_json()
  	return jsonify({'message': "data recieved"})
