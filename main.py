@@ -18,6 +18,12 @@ def submit_data():
 		c = h.hashedinfo(u_and_p[0], u_and_p[1])
 		return jsonify({"message": c}), 200
 
+
+@app.route('/ap/recieve_data, methods=['POST'])
+def recieve_data():
+	data = request.get_json()
+ 	return jsonify({'message': "data recieved"})
+
 # This block is for running your Flask app
 if __name__ == '__main__':
 		app.run(debug=True, host='0.0.0.0', port=5000)
