@@ -10,7 +10,7 @@ import hashing as h
 app = Flask(__name__)
 CORS(app)
 #put hashing print over here
-@app.route('/submit', methods=['POST'])
+@app.route('/submit', methods=["POST"])
 
 def submit_data():
 		data = request.get_json()
